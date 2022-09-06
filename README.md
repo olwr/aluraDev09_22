@@ -1,5 +1,5 @@
 # aluraDev09_22
- Projetos realizados na imensão AluraDev 09/2022 
+ Projetos realizados na imersão AluraDev 09/2022 
 
 # Aula01
  ## Calculadora de Média
