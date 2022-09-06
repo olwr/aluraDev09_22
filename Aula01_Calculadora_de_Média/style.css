@@ -1,0 +1,72 @@
+body {
+    color: #231c12;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 400px;
+    background: url(blackboard-g68418afcc_1920.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+main {
+    text-align: center;
+    background: url(gradeIcon.png) no-repeat fixed center;
+    background-size: 400px;
+    padding: 20px;
+    height: 100vh;
+}
+
+.page-title {
+    color: #dc4632;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.page-icon {
+    width: 50px;
+}
+
+form {
+    margin-top: 35px;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    border-radius: 7px 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #dc4632;
+    opacity: 90%;
+}
+
+button:hover {
+    background-color: #1ed760;
+    transition: 0.5s;
+}
+
+h2 {
+    color: #fff;
+    background-color: #231c12;
+    width: 45vh;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.personal-icon {
+    width: 50px;
+    position: absolute;
+    bottom: 40px;
+    right: 113px;
+}
