@@ -8,3 +8,11 @@
 ### Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://olwr-aluradev-aula01.vercel.app)
+
+# Aula02
+ ## Conversor de Moedas
+ 
+### Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://currency-converter-iota-neon.vercel.app)
+ 
