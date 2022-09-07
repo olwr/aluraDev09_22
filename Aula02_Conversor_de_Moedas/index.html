@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="currency converter, brl real to usa dolar">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="heading">
+            <h1 class="page-title">Currency Converter <img src="coins.png" class="page-icon"
+                    alt="pile of gold and silver coins" /></h1>
+            <p class="page-subtitle">Converter any amount from Dolar ($) to Real(R$)</p>
+        </div>
+        <div class="content">
+            <label for="converter">Inform value in Dolar ($)</label>
+            <input type="number" name="converter" id="dolar" required min="0" placeholder="dolar (usa)">
+            <br>
+        </div>
+        <button class="button" onclick="Converter()">Convert</button>
+
+        <div class="result">
+            <h2 id="brl"></h2>
+        </div>
+    </main>
+
+    <div class="">
+        <a href="https://github.com/olwr" target="_blank" rel="noopener noreferrer"><img src="olwr.png" class="personal-icon"
+                alt=""></a>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

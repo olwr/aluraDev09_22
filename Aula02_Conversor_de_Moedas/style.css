@@ -1,0 +1,73 @@
+body {
+    color: #505050;
+    font-weight: bold;
+    min-height: 400px;
+    background: linear-gradient(#fffd7a, #bde36c, #2c867c);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    background: url(Calculadora.png) repeat fixed;
+    background-size: 30vh;
+}
+
+.heading {
+    background-color: rgba(255, 253, 122, 90%);
+    border-radius: 7px;
+    width: fit-content;
+    margin: auto;
+}
+
+.content {
+    background-color: rgba(189, 227, 108, 90%);
+    border-radius: 7px;
+    width: fit-content;
+    margin: auto;
+}
+
+.page-title {
+    margin: 0 0 5px;
+}
+
+.page-icon {
+    width: 45px;
+}
+
+.page-subtitle {
+    margin-top: 7px;
+}
+
+input {
+    border-radius: 7px;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 7px 3px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(250, 100, 80, 90%);
+}
+
+button:hover {
+    background: rgba(89, 198, 57, 90%);
+    transition: 0.5s;
+}
+
+h2 {
+    background-color: rgba(44, 134, 124, 90%);
+    border-radius: 3px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.personal-icon {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+}
