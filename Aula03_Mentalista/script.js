@@ -42,11 +42,11 @@ document.querySelector(".play").onclick = function play() {
     }
 
     if (attemptsCount != maxAttempts && cpuNumber == playerInput) {
-        attempts.textContent = "Dumb luck, I bet you can beat me twice";
+        attempts.textContent = "Dumb luck, I bet you can't beat me twice";
     }
 
     if (attemptsCount == maxAttempts && cpuNumber == playerInput) {
-        attempts.textContent = "Dumb luck, I bet you can beat me twice";
+        attempts.textContent = "Dumb luck, I bet you can't beat me twice";
     }
 
     document.querySelector(".reset").onclick = function reset() {
