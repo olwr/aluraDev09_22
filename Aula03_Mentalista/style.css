@@ -1,0 +1,83 @@
+body {
+    color: #000;
+    font-family: monospace;
+    background: linear-gradient(#a8dadc, #457b9d, #1d3557);
+    min-height: 400px;
+}
+
+main {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background: url(Mentalista.png) no-repeat fixed center;
+}
+
+.page-title {
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    margin-top: 15px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input {
+    padding: 7px;
+    border-radius: 7px;
+    margin-top: 15px;
+    width: 17vh;
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: aliceblue;
+}
+
+input:invalid {
+    background-color: #e63946;
+}
+
+button {
+    padding: 3px;
+    width: 7vh;
+    margin-top: 13px;
+    border-radius: 5px 7px;
+    background-color: #f1faee;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #b392ac;
+    transition: 0.5s;
+    width: 15vh;
+}
+
+h2 {
+    color: #08475e;
+    font-weight: bolder;
+}
+
+.attempts {
+    color: #fff5f5;
+    font-weight: bolder;
+    background-color: rgba(97, 150, 175, 85%);
+    width: 29vh;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.personal-logo {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+}
+
+.personal-logo:hover {
+    width: 70px;
+    transition: 0.5s;
+}
