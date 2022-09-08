@@ -3,8 +3,9 @@ var cpuNumber = parseInt(Math.random() * (15 - 0) + 0);
 
 // player attempts //
 var attempts = document.querySelector(".attempts");
-var attemptsCount = 1;
+var attemptsCount = 0;
 var maxAttempts = 3;
+var guesses = 2;
 
 document.querySelector(".play").onclick = function play() {
     // player number //
@@ -17,6 +18,7 @@ document.querySelector(".play").onclick = function play() {
     // cpu vs player //
     if (cpuNumber == playerInput) {
         result.textContent = "It's a match!";
+        playButton.disabled = true;
     } else if (playerInput < 0 || playerInput > 15) {
         result.textContent = "Invalid number, try again.";
     } else if (cpuNumber > playerInput) {
@@ -24,16 +26,27 @@ document.querySelector(".play").onclick = function play() {
     } else if (cpuNumber < playerInput) {
         result.textContent = "Colder, the number is less than " + playerInput;
     }
-
+    
     if (attemptsCount != maxAttempts) {
-        attempts.textContent = "You've " + attemptsCount++ + " remaining chance(s)";
-    } else if (cpuNumber == playerInput) {
-        attempts.textContent = "Pure luck, I bet you can't beat me twice";
+        attempts.textContent = "You've " + guesses-- + " remaining chance(s)";
+        maxAttempts--;
+    } else if  (attemptsCount == maxAttempts) {
+        attempts.textContent = "No more chances";
         playButton.disabled = true;
-    } else if (attemptsCount == maxAttempts) {
+    }
+
+    if (attemptsCount == maxAttempts && cpuNumber != playerInput) {
         result.textContent = "GAME OVER, the number was " + cpuNumber;
-        attempts.textContent = "Drip drop, you lost!"
+        attempts.textContent = "Drip drop, you lost!";
         playButton.disabled = true;
+    }
+
+    if (attemptsCount != maxAttempts && cpuNumber == playerInput) {
+        attempts.textContent = "Dumb luck, I bet you can beat me twice";
+    }
+
+    if (attemptsCount == maxAttempts && cpuNumber == playerInput) {
+        attempts.textContent = "Dumb luck, I bet you can beat me twice";
     }
 
     document.querySelector(".reset").onclick = function reset() {
