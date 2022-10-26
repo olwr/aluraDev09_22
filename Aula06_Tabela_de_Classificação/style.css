@@ -1,0 +1,51 @@
+body {
+    font-family: monospace;
+    color: #c8cbe5;
+    background: url(chess.jpeg) no-repeat fixed center;
+    background-size: 100% 100%;
+    min-height: 400px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+table {
+    width: 100%;
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+th,
+tr,
+td {
+    border: solid 1px white;
+    color: white;
+}
+
+button {
+    border-radius: 7px;
+    border: 0;
+    transition: 150ms ease-in-out;
+    font-family: monospace;
+}
+
+button:hover {
+    background: #fee3a7;
+    transition: 0.5s;
+    transform: scale(1.06);
+}
+
+.w {
+    background: #84a98c;
+}
+
+.t {
+    background: #29b7da;
+}
+
+.d {
+    background: #e05c5c;
+}

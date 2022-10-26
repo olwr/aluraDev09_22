@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+    <h1>Temperature Converter</h1>
+    <p>From abslute zero to boiling water</p>
+    <div class="row">
+
+        <div class="column">
+            <div class="range-wrap">
+                <label for="celsius">From celsius to fahrenheit & kelvin</label>
+                <input type="range" class="range" name="celsius" id="range1" min="-273.15" max="100.15" value="0">
+                <output class="bubble"></output>
+                <br>
+                <button type="submit">Convert</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="column">
+            <div class="range-wrap">
+                <label for="fahrenheit">From fahrenheit to celsius & kelvin</label>
+                <input type="range" class="range" name="fahrenheit" id="range2" min="-459.67" max="212.15" value="32">
+                <output class="bubble"></output>
+                <br>
+                <button type="submit">Convert</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="column">
+            <div class="range-wrap">
+                <label for="kelvin">From kelvin to celsius & fahrenheit</label>
+                <input type="range" class="range" name="kelvin" id="range3" min="0" max="373.15" value="273.15">
+                <output class="bubble"></output>
+                <br>
+                <button type="submit">Convert</button>
+            </div>
+        </div>
+        <br>
+    </div>
+</main>
+</body>
+<script src="script.js"></script>
+</html>
